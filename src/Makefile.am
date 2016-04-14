@@ -129,6 +129,7 @@ libguestfs_la_SOURCES = \
 	structs-copy.c \
 	structs-free.c \
 	tmpdirs.c \
+	wait.c \
 	whole-file.c \
 	libguestfs.syms
 

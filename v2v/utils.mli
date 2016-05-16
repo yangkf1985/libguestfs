@@ -53,3 +53,11 @@ val compare_app2_versions : Guestfs.application2 -> Guestfs.application2 -> int
 
 val remove_duplicates : 'a list -> 'a list
 (** Remove duplicates from a list. *)
+
+val shell_unquote : string -> string
+(** If the string looks like a shell quoted string, then attempt to
+    unquote it.
+
+    This is just intended to deal with quoting in configuration files
+    (like ones under /etc/sysconfig), and it doesn't deal with some
+    situations such as $variable interpolation. *)

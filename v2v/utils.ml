@@ -125,3 +125,5 @@ let remove_duplicates xs =
     | x :: xs -> Hashtbl.add h x true; x :: loop xs
   in
   loop xs
+
+external shell_unquote : string -> string = "v2v_utils_shell_unquote"
